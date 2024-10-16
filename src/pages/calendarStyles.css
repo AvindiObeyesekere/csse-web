@@ -1,0 +1,53 @@
+/* src/styles/calendarStyles.css */
+
+/* Custom styles for the React Calendar */
+.custom-calendar {
+    width: 100%;
+    border: none;
+    font-family: 'Arial', sans-serif;
+}
+
+.custom-calendar .react-calendar__tile {
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.custom-calendar .react-calendar__tile--active {
+    background-color: #34d399; /* Tailwind 'teal-400' */
+    color: white;
+    border-radius: 50%;
+}
+
+.custom-calendar .react-calendar__tile--now {
+    background-color: #f87171; /* Tailwind 'red-400' */
+    color: white;
+    border-radius: 50%;
+}
+
+.custom-calendar .react-calendar__tile--hover:hover {
+    background-color: #6ee7b7; /* Tailwind 'teal-300' */
+    color: white;
+}
+
+.custom-calendar .react-calendar__month-view__days__day--weekend {
+    color: #6b7280; /* Tailwind 'gray-500' */
+}
+
+.custom-calendar .react-calendar__navigation button {
+    color: #34d399; /* Tailwind 'teal-600' */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Add horizontal margin to space out buttons */
+}
+
+.custom-calendar .react-calendar__navigation {
+    display: flex; /* Ensure the buttons are displayed inline */
+    align-items: center; /* Center align the items */
+}
+
+.highlighted-date {
+    background-color: #34d399; /* Tailwind 'teal-400' */
+    color: white;
+    border-radius: 50%; /* Circular highlight */
+}
